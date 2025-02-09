@@ -1,0 +1,3 @@
+group,ip,hostname,pass,port
+default,192.168.150.121,automaintance,UTHV5GHn%F,22
+default,192.168.150.93,yufa平台调度,UTHV5GHn%F,22

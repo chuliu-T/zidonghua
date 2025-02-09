@@ -1,0 +1,16 @@
+ansible etcd -m command -a 'systemctl restart etcd'
+ansible master  -a 'systemctl restart kube-apiserver'
+ansible master  -a "systemctl restart kube-controller-manager"
+ansible master  -a "systemctl restart kube-scheduler"
+ansible work  -a "systemctl restart containerd"
+ansible work  -a "systemctl restart kubelet"
+ansible work  -a "systemctl restart kube-proxy"
+
+查看集群信息
+kubectl cluster-info
+
+查看集群组件状态
+kubectl get componentstatuses
+
+查看命名空间中资源对象
+kubectl get all --all-namespaces

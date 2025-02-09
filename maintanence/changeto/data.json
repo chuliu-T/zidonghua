@@ -1,0 +1,16 @@
+{
+  "default": [
+    {
+      "ip": "192.168.100.3",
+      "hostname": "JumpServer",
+      "pass": "123",
+      "port": "22"
+    },
+    {
+      "ip": "192.168.100.11",
+      "hostname": "JumpServer",
+      "pass": "123",
+      "port": "22"
+    }
+  ]
+}
